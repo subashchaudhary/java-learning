@@ -1,33 +1,108 @@
-
-import java.util.Scanner;
+import day1.JavaFunction;
+import oop.CellingFan;
+import oop.Fan;
+import oop.TableFan;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Main{
 
+
+    //This is the starting point for the application to run,
+    //JVM used to call this method to start the application
     public static  void main(String arg[]){
 
+
+        CellingFan cellingFan = new CellingFan();
+        cellingFan.setColor("Brown");
+        cellingFan.setModelNumber("CEL123");
+        cellingFan.setNoOfBlade(3);
+        cellingFan.setType("celling");
+
+
+        cellingFan.start();
+
+
+
+
+        TableFan fan1 = new TableFan();
+        fan1.setColor("White");
+        fan1.setModelNumber("TAB1234");
+        fan1.setNoOfBlade(5);
+
+
+
+//        Fan fan1 = new Fan();  //object creation
+//        fan1.setModelNumber("XYZ123");
+//        fan1.setColor("Black");
+//        fan1.setType("Celling");
+//        fan1.setNoOfBlade(3);
+//
+//        Fan f2 = new Fan("abc141", "celling", "brown", 3);
+
+
+        System.out.println(cellingFan);
+        System.out.println(fan1);
+
+
+
+
+
+
+
+
+
+
+//        JavaFunction object1 = new JavaFunction(); //object creation
+//
+//        JavaFunction object2 = new JavaFunction("Kanti Namuna"); //object creation
+//
+//
+//
+//        System.out.println(object1);
+//
+//        System.out.println(object2);
+//
+
+
+
+
+
+
+
+
+        //typecasting in java
+
+
+//        int a = 10; //int type
+//
+//        long b = (long) a;  //implicit type casting
+
+
+
+
+
         //to read the value form the Console
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter your name");
+//        //this line used to read the data from the input and assign to variable
+//        String name = scanner.next();
+//        System.out.println("Welcome Mr. "+ name);
+//
+//        System.out.println("Enter your marks");
+//        //this line used to read the data from the input and assign to variable
+//        int obtainedMarks = scanner.nextInt();
 
-        System.out.println("Enter your name");
-        //this line used to read the data from the input and assign to variable
-        String name = scanner.next();
-        System.out.println("Welcome Mr. "+ name);
-
-        System.out.println("Enter your marks");
-        //this line used to read the data from the input and assign to variable
-        int obtainedMarks = scanner.nextInt();
-
-        int passingMarks = 45;
-        int fullMarks = 100;
-
-        // condition statement
-        if(obtainedMarks > passingMarks){
-            System.out.println("Congratulation Mr. " + name + " You are passed!");
-        }else{
-            System.out.println("Sorry you are failed!");
-        }
+//        int passingMarks = 45;
+//        int fullMarks = 100;
+//
+//        // condition statement
+//        if(obtainedMarks > passingMarks){
+//            System.out.println("Congratulation Mr. " + name + " You are passed!");
+//        }else{
+//            System.out.println("Sorry you are failed!");
+//        }
 
 
         //single line comment
