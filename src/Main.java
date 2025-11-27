@@ -1,7 +1,10 @@
 import day1.JavaFunction;
-import oop.CellingFan;
-import oop.Fan;
-import oop.TableFan;
+import oop.*;
+import oop.polymorphism.overriding.Animal;
+import oop.polymorphism.overriding.CarnivorousAnimal;
+import oop.polymorphism.overriding.HerbivorousAnimal;
+
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,22 +16,51 @@ public class Main{
     public static  void main(String arg[]){
 
 
-        CellingFan cellingFan = new CellingFan();
-        cellingFan.setColor("Brown");
-        cellingFan.setModelNumber("CEL123");
-        cellingFan.setNoOfBlade(3);
-        cellingFan.setType("celling");
+        System.out.println("Welcome to the virtual computer");
+        System.out.println("\n choose your laptop");
+
+        System.out.println("\n 1. Dell Laptop");
+        System.out.println("\n 2. Mac OS");
+
+        Scanner sc = new Scanner(System.in);
+        int choice = sc.nextInt();
+        Computer computer= null;
 
 
-        cellingFan.start();
+        switch (choice){
+            case 1:
+                computer = new DellLaptop();
+                computer.start();
+                break;
+
+            case 2:
+                computer = new MacLaptop();
+                computer.start();
+                break;
+            default:
+                System.out.println("Wrong choice");
+
+        }
 
 
 
 
-        TableFan fan1 = new TableFan();
-        fan1.setColor("White");
-        fan1.setModelNumber("TAB1234");
-        fan1.setNoOfBlade(5);
+//        CellingFan cellingFan = new CellingFan();
+//        cellingFan.setColor("Brown");
+//        cellingFan.setModelNumber("CEL123");
+//        cellingFan.setNoOfBlade(3);
+//        cellingFan.setType("celling");
+//
+//
+//        cellingFan.start();
+//
+//
+//
+//
+//        TableFan fan1 = new TableFan();
+//        fan1.setColor("White");
+//        fan1.setModelNumber("TAB1234");
+//        fan1.setNoOfBlade(5);
 
 
 
@@ -41,8 +73,8 @@ public class Main{
 //        Fan f2 = new Fan("abc141", "celling", "brown", 3);
 
 
-        System.out.println(cellingFan);
-        System.out.println(fan1);
+//        System.out.println(cellingFan);
+//        System.out.println(fan1);
 
 
 
