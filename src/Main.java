@@ -15,33 +15,49 @@ public class Main{
     //JVM used to call this method to start the application
     public static  void main(String arg[]){
 
+        Fan fan = new Fan();
+        fan.setType("table");
+        fan.setColor("white");
+        fan.setNoOfBlade(5);
+        fan.setModelNumber("USHA27520");
 
-        System.out.println("Welcome to the virtual computer");
-        System.out.println("\n choose your laptop");
-
-        System.out.println("\n 1. Dell Laptop");
-        System.out.println("\n 2. Mac OS");
-
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
-        Computer computer= null;
+        System.out.println(fan);
 
 
-        switch (choice){
-            case 1:
-                computer = new DellLaptop();
-                computer.start();
-                break;
 
-            case 2:
-                computer = new MacLaptop();
-                computer.start();
-                break;
-            default:
-                System.out.println("Wrong choice");
 
-        }
 
+
+
+
+//
+//
+//        System.out.println("Welcome to the virtual computer");
+//        System.out.println("\n choose your laptop");
+//
+//        System.out.println("\n 1. Dell Laptop");
+//        System.out.println("\n 2. Mac OS");
+//
+//        Scanner sc = new Scanner(System.in);
+//        int choice = sc.nextInt();
+//        Computer computer= null;
+//
+//
+//        switch (choice){
+//            case 1:
+//                computer = new DellLaptop();
+//                computer.start();
+//                break;
+//
+//            case 2:
+//                computer = new MacLaptop();
+//                computer.start();
+//                break;
+//            default:
+//                System.out.println("Wrong choice");
+//
+//        }
+//
 
 
 

@@ -2,7 +2,7 @@ package day1;
 
 
 //class definition
-public class JavaFunction {
+public class JavaFunction extends Object{
 
 
     //properties : (member variables)

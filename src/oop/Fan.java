@@ -1,6 +1,6 @@
 package oop;
 
-public class Fan {
+public class Fan extends Object{
 
 
     public Fan(){
