@@ -21,6 +21,7 @@ public class Main{
         fan.setNoOfBlade(5);
         fan.setModelNumber("USHA27520");
 
+        fan.start();
         System.out.println(fan);
 
 

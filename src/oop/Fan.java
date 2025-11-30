@@ -1,5 +1,7 @@
 package oop;
 
+import annotation.MyCustomAnnotation;
+
 public class Fan extends Object{
 
 
@@ -56,6 +58,7 @@ public class Fan extends Object{
     }
 
     //member function
+    @MyCustomAnnotation(value = "test")
     public void start(){
         System.out.println("Fan started!!");
     }
