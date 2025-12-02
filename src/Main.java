@@ -15,15 +15,17 @@ public class Main{
     //JVM used to call this method to start the application
     public static  void main(String arg[]){
 
-        Fan fan = new Fan();
-        fan.setType("table");
-        fan.setColor("white");
-        fan.setNoOfBlade(5);
-        fan.setModelNumber("USHA27520");
 
-        fan.start();
-        System.out.println(fan);
 
+//        Fan fan = new Fan();
+//        fan.setType("table");
+//        fan.setColor("white");
+//        fan.setNoOfBlade(5);
+//        fan.setModelNumber("USHA27520");
+//
+//        fan.start();
+//        System.out.println(fan);
+//
 
 
 
