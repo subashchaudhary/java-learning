@@ -8,13 +8,23 @@ import java.util.List;
 public class SmartPhone extends KeypadPhone {
 
 
-    private int age;
+    private Integer age;
 
-    public int getAge() {
+    private Integer ramSize;
+
+    public Integer getRamSize() {
+        return ramSize;
+    }
+
+    public void setRamSize(Integer ramSize) {
+        this.ramSize = ramSize;
+    }
+
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age){
+    public void setAge(Integer age){
         this.age = age;
     }
 
@@ -40,5 +50,13 @@ public class SmartPhone extends KeypadPhone {
 
 
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "age=" + age +
+                ", ramSize=" + ramSize +
+                '}';
     }
 }
