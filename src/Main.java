@@ -1,4 +1,5 @@
 import day1.JavaFunction;
+import innerclass.InnerClassDemo;
 import oop.*;
 import oop.polymorphism.overriding.Animal;
 import oop.polymorphism.overriding.CarnivorousAnimal;
@@ -16,6 +17,13 @@ public class Main{
     public static  void main(String arg[]){
 
 
+
+        InnerClassDemo innerClassDemo = new InnerClassDemo();
+
+        InnerClassDemo.InnerClass innerClass = new InnerClassDemo.InnerClass();
+        innerClass.setName("abc");
+
+        System.out.println(innerClass.getName());
 
 //        Fan fan = new Fan();
 //        fan.setType("table");
