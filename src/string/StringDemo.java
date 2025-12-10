@@ -9,7 +9,7 @@ public class StringDemo {
     static void main(){
 
 
-        String str = "Hellow I am a java developer.";
+        String str = "Hellow I am a java developer. ";
 
         //how to define string
         //method 1: String literal
@@ -82,10 +82,50 @@ public class StringDemo {
         System.out.println("isContained : " + isContained);
 
 
+        //9. string lengh of character.
+       int len =  str.length();
+       System.out.println(len);
+
+       str.contentEquals("java");
+
+       //10. String formatting
+       System.out.println(String.format("NAME = %s age = %d", "Amit", 29 ));
+       System.out.println("formatated string: " + "NAME = %s age = %d".formatted("Amit", 27));
 
 
+       //regex : regular expression
+
+       //11. string split
+
+        System.out.println("After String split: ");
+        String resultWords[]  = finalStr.split("\s");
+        for(String word: resultWords){
+            System.out.println(word);
+        }
 
 
+        //12.  substring
+        // ex; I am java developer
+
+        // I
+        // I a
+        // I am
+        // am
+        // am java
+        // java developer
+        // developer
+
+        // by passing the initial index
+       System.out.println(str.substring(7));
+
+        // by passing start and end index
+
+        System.out.println(str.substring(14, 18));
+
+
+       System.out.println(str.replace("java", "python"));
+
+       boolean start = str.startsWith("Hellow");
 
 
     }
