@@ -5,7 +5,7 @@ import annotation.ValidAge;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SmartPhone extends KeypadPhone {
+public class SmartPhone implements Mobile {
 
 
     private Integer age;
@@ -50,6 +50,11 @@ public class SmartPhone extends KeypadPhone {
 
 
         return false;
+    }
+
+    @Override
+    public void playSnakeGame() {
+        System.out.println("Loading snake game in smartPhone.");
     }
 
     @Override

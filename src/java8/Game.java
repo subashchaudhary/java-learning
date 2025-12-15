@@ -1,12 +1,15 @@
-package oop.abstracion;
+package java8;
 
-public interface Mobile {
+import java.util.List;
 
-    public abstract void makeCall(String phone);
+//Default and static method in java 8;
 
-    public abstract void playRadio();
 
-    public abstract boolean sendSms(String textMessage);
+public interface Game {
+
+
+    public abstract void run();
+    public abstract List<String> fetchGame();
 
     //default methods
     default public void playSnakeGame(){
@@ -22,5 +25,4 @@ public interface Mobile {
     static void scanData(){
         System.out.println("Invoking static method.");
     }
-
 }

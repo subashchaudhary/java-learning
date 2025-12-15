@@ -1,6 +1,9 @@
 import day1.JavaFunction;
 import innerclass.InnerClassDemo;
 import oop.*;
+import oop.abstracion.KeypadPhone;
+import oop.abstracion.Mobile;
+import oop.abstracion.SmartPhone;
 import oop.polymorphism.overriding.Animal;
 import oop.polymorphism.overriding.CarnivorousAnimal;
 import oop.polymorphism.overriding.HerbivorousAnimal;
@@ -17,13 +20,23 @@ public class Main{
     public static  void main(String arg[]){
 
 
+        KeypadPhone keypadPhone = new KeypadPhone();
+        KeypadPhone keypadPhon2 = new KeypadPhone();
 
-        InnerClassDemo innerClassDemo = new InnerClassDemo();
+        keypadPhone.playSnakeGame();
 
-        InnerClassDemo.InnerClass innerClass = new InnerClassDemo.InnerClass();
-        innerClass.setName("abc");
+        keypadPhon2.playSnakeGame();
 
-        System.out.println(innerClass.getName());
+        SmartPhone smartPhone = new SmartPhone();
+        smartPhone.playSnakeGame();
+
+        Mobile.scanData();
+//        InnerClassDemo innerClassDemo = new InnerClassDemo();
+//
+//        InnerClassDemo.InnerClass innerClass = new InnerClassDemo.InnerClass();
+//        innerClass.setName("abc");
+//
+//        System.out.println(innerClass.getName());
 
 //        Fan fan = new Fan();
 //        fan.setType("table");
