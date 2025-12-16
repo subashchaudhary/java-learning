@@ -1,9 +1,12 @@
 package java8;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamApiDemo {
@@ -36,6 +39,17 @@ public class StreamApiDemo {
        //parked for later
        numList.stream().sorted();
 
+
+       //termination fo the stream api
+
+        Set<Integer> newList = numList.stream().map(e-> e *2).filter(e -> e%2 ==0).collect(Collectors.toSet());
+
+        System.out.println("number in the set:");
+        for (Integer i : newList){
+            System.out.print(" " +i);
+        }
+
+        System.out.println();
        //flat map
 
         // List of lists of names
