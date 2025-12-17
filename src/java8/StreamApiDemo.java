@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -64,5 +65,15 @@ public class StreamApiDemo {
       List<String> finalList= (List<String>) listOfLists.stream().flatMap(ele -> ele.stream()).map(e -> e).toList();
 
       System.out.println(finalList);
+
+      //Method reference synatax (::)
+        System.out.println("method reference demo: ");
+        numList.stream().map(StreamApiDemo::doubleNumber);
     }
+
+
+    private static Integer doubleNumber(Integer num){
+        return num * 2;
+    }
+
 }

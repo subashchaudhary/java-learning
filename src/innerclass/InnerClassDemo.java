@@ -12,7 +12,6 @@ public class InnerClassDemo {
 
 
 
-
     public static class InnerClass{
         private  String name;
 
@@ -24,4 +23,5 @@ public class InnerClassDemo {
             return name;
         }
     }
+
 }
